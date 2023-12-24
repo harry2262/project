@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hostel Room Allocation</title>
+</head>
+<body>
+    <header>
+        <h1>Hostel Room Allocation System</h1>
+    </header>
+    
+    <main>
+        <section id="roomAllocationForm">
+            <h2>Room Allocation Form</h2>
+            <form id="allocationForm" method="post" action="/">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <!-- Add more room types as needed -->
+
+                </select>
+                
+                <label for="floor">Floor:</label>
+                <input type="number" id="floor" name="floor" required>
+                
+                <button type="submit">Allocate Room</button>
+            </form>
+        </section>
+
+        <section id="allocatedRooms">
+            <h2>Allocated Rooms</h2>
+            <ul id="roomList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hostel Room Allocation System</p>
+    </footer>
+
+    <!-- <script type="module" src="script.js"></script> -->
+</body>
+</html>
+

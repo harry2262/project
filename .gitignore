@@ -1,0 +1,54 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore logs and runtime data
+logs/
+*.log
+npm-debug.log*
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore build artifacts and production build directory
+build/
+dist/
+
+# Ignore dependency directories
+bower_components/
+jspm_packages/
+
+# Ignore cache directories
+.cache/
+lib-cov/
+*.seed
+*.pid
+*.log
+pids/
+logs/
+*.log.*
+npm-debug.log.*
+
+# Ignore macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore project-specific files
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary files
+*.swp
+*.swo
+*.swn
+
+# Ignore test coverage output
+coverage/
+
+# Ignore .DS_Store files
+.DS_Store
+
