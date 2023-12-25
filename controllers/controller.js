@@ -2,7 +2,9 @@ const pool = require('../model/db');
 const bcrypt = require('bcrypt');
 const saltRounds=10;
  const loadHomepage = (req,res) => {
-    res.sendFile("/home/batth/sanjha/code/winter23/project/public/login.html"); 
+  res.setHeader("set-cookie",["setfromserver=1"]);
+  res.cookie('userdata','newuser',{httpOnly:true});  
+  res.sendFile("/home/batth/sanjha/code/winter23/project/public/login.html"); 
 }
  const register = (req,res)=>{
    

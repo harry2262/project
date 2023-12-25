@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+var cookieParser = require('cookie-parser');
 
 // const {addstudent} = require('../db/addstudent.js');
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 const homepageRoutes = require('./routes/routes.js')
 app.use('/', homepageRoutes);
 
