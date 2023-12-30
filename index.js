@@ -12,7 +12,7 @@ app.use(cookieParser());
 //routes
 const homepageRoutes = require('./routes/routes.js')
 app.use('/', homepageRoutes);
-
+console.log(process.env);
 // port to listen for requests
 const port = process.env.PORT||3001;
 app.listen(port, () => {
