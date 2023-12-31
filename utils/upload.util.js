@@ -1,7 +1,7 @@
 const {v2 } = require('cloudinary');
 const fs = require('fs');
-  
-require('dotenv').config()
+const path = require('path');
+require('dotenv').config({path:path.resolve(__dirname,"../.env")})
 v2.config({ 
   cloud_name: process.env.CLOUDINARY_NAME, 
   api_key: process.env.CLOUDINARY_KEY, 
@@ -28,7 +28,7 @@ try{
   }
 
 }
-
+console.log(process.env)
 module.exports=  {uploadOnCloudinary}
 
 
